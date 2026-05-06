@@ -67,16 +67,19 @@
         }
 
         .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            font-weight: 400;
-            letter-spacing: 0.15em;
-            color: var(--white);
+            display: flex;
+            align-items: center;
             text-decoration: none;
         }
 
-        .logo span {
-            color: var(--accent);
+        .logo img {
+            height: 69px;
+            width: auto;
+            display: block;
+        }
+
+        footer .logo img {
+            height: 250px;
         }
 
         .nav-links {
@@ -346,17 +349,16 @@
         .about-image {
             position: relative;
             height: 600px;
-            background-image: url("img/about.jpg");
+            background-image: url("img/10-web-or-mls-SCP02163.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             overflow: hidden;
+            transition: transform 0.6s ease;
         }
 
-        .about-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-image: url("img/about.jpg");
+        .about-image:hover {
+            transform: scale(1.03);
         }
 
         .about-image-frame {
@@ -509,7 +511,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url("img/p1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             transition: transform 0.6s ease;
         }
 
@@ -1003,7 +1007,9 @@
 <body>
     <!-- Navigation -->
     <nav id="navbar">
-        <a href="#" class="logo">AJH <span>Masonry</span></a>
+        <a href="#" class="logo">
+            <img src="img/Transparent Background Logo.png" alt="AJH Masonry Logo">
+        </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -1162,35 +1168,35 @@
         </div>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <div class="portfolio-item-bg"></div>
+                <div class="portfolio-item-bg" style="background-image: url('img/8-web-or-mls-SCP02044.jpg');"></div>
                 <div class="portfolio-overlay">
                     <h4>Lakeside Estate</h4>
                     <span>Stone Veneer</span>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-item-bg"></div>
+                <div class="portfolio-item-bg" style="background-image: url('img/IMG_5768.jpeg');"></div>
                 <div class="portfolio-overlay">
                     <h4>Modern Residence</h4>
                     <span>Custom Fireplace</span>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-item-bg"></div>
+                <div class="portfolio-item-bg" style="background-image: url('img/IMG_6017.jpeg');"></div>
                 <div class="portfolio-overlay">
                     <h4>Garden Retreat</h4>
                     <span>Retaining Walls</span>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-item-bg"></div>
+                <div class="portfolio-item-bg" style="background-image: url('img/IMG_0124.jpeg');"></div>
                 <div class="portfolio-overlay">
                     <h4>Heritage Home</h4>
                     <span>Full Restoration</span>
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-item-bg"></div>
+                <div class="portfolio-item-bg" style="background-image: url('img/52-web-or-mls-SCP02148.jpg');"></div>
                 <div class="portfolio-overlay">
                     <h4>Outdoor Living</h4>
                     <span>Kitchen & Patio</span>
@@ -1284,18 +1290,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="#" class="logo">AJH <span>Masonry</span></a>
-                <p>Crafting timeless masonry with precision and artistry. Every stone tells a story of excellence.</p>
-                <div class="social-links">
-                    <a href="instagram.com/ajhmasonryinc" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="18" cy="6" r="1"/>
-                        </svg>
-                    </a>
-                    Follow us on Instagram!
-                </div>
+                <a href="#" class="logo">
+                    <img src="img/AJH Logo transparent large.png" alt="AJH Masonry Logo">
+                </a>
             </div>
             <div class="footer-column">
                 <h4>Services</h4>
